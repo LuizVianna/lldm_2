@@ -8,7 +8,7 @@
 
     <table>
       <thead>
-        <th>Id</th>
+        <th>Especialidades</th>
         <th>Nome completo</th>
         <th>CPF</th>
         <th>E-mail</th>
@@ -17,7 +17,7 @@
       </thead>
       <tbody v-if="qtde > 0 ">
         <tr v-for="(terapeuta, index) in terapeutas" :key="index">
-          <td>{{ terapeuta.id }}</td>
+          <td>{{ terapeuta.especialidade.descricao }}</td>
           <td>{{ terapeuta.nomeCompleto }}</td>
           <td>{{ terapeuta.cpf }}</td>
           <td>{{ terapeuta.email }}</td>
